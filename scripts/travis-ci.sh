@@ -51,7 +51,7 @@ system_install() {
 
   # Build Behat dependencies
   header Installing Behat
-  cd profiles/panopoly/modules/panopoly/panopoly_tests/tests
+  cd profiles/panopoly/modules/panopoly/panopoly_test/tests
   composer install --prefer-source --no-interaction
   cd ../../../../../../../
 
