@@ -178,11 +178,9 @@ run_tests() {
   header Running tests
   
   # Make the Travis tests repos agnostic by injecting drupal_root with BEHAT_PARAMS
-  TEMP_PARAMS='{"extensions":{"Drupal\\DrupalExtension":{"drupal":{"drupal_root":"'
-  TEMP_PARAMS+=$BUILD_TOP
-  TEMP_PARAMS+='/drupal"}}}}'
-
-  export BEHAT_PARAMS="$TEMP_PARAMS"
+  BEHAT_PARAMS='{"extensions":{"Drupal\\DrupalExtension":{"drupal":{"drupal_root":"BUILD_TOP/drupal"}}}}'
+  BEHAT_PARAMS=`echo $BEHAT_PARAMS | sed -e s#BUILD_TOP#$BUILD_TOP#`
+  export BEHAT_PARAMS
 
   cd drupal/profiles/panopoly/modules/panopoly/panopoly_test/tests
 
