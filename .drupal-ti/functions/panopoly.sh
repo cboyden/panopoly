@@ -160,6 +160,10 @@ function drupal_ti_install_drupal() {
 		drush updb --yes
 		drush cc all
 	fi
+	drush dl radix
+	drush -y en radix
+	drush vset theme_default radix
+	drush cc all
 }
 
 #
