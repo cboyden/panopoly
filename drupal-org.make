@@ -8,6 +8,7 @@ projects[panopoly_core][subdir] = panopoly
 projects[panopoly_core][download][type] = git
 projects[panopoly_core][download][revision] = 2878c63
 projects[panopoly_core][download][branch] = 7.x-1.x
+projects[panopoly_core][patch][2679947] = https://www.drupal.org/files/issues/panopoly_core-fpp-update-2679947-2.patch
 
 projects[panopoly_images][version] = 1.x-dev
 projects[panopoly_images][subdir] = panopoly
