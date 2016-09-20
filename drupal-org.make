@@ -72,3 +72,4 @@ projects[panopoly_test][subdir] = panopoly
 projects[panopoly_test][download][type] = git
 projects[panopoly_test][download][revision] = f4946e4
 projects[panopoly_test][download][branch] = 7.x-1.x
+projects[panopoly_test][patch][2803347] = https://www.drupal.org/files/issues/panopoly_test-update-drupalextension-2803347-2.patch
