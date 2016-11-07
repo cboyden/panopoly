@@ -8,7 +8,7 @@ projects[panopoly_core][subdir] = panopoly
 projects[panopoly_core][download][type] = git
 projects[panopoly_core][download][revision] = 16012c7
 projects[panopoly_core][download][branch] = 7.x-1.x
-projects[panopoly_core][patch][2789503] = https://www.drupal.org/files/issues/panopoly_core-update-ctools-2789503-5.patch
+projects[panopoly_core][patch][2789503] = https://www.drupal.org/files/issues/panopoly_core-update-ctools-2789503-8.patch
 
 projects[panopoly_images][version] = 1.x-dev
 projects[panopoly_images][subdir] = panopoly
