@@ -9,6 +9,7 @@ drupal_ti_ensure_php_for_drush_webserver
 
 # Ensure that drush and addons are installed.
 panopoly_header Installing Drush
+export DRUPAL_TI_DRUSH_VERSION="drush/drush:8.1.*"
 panopoly_ensure_drush
 
 # Ensure the distribution is linked into the code base.
