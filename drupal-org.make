@@ -8,6 +8,7 @@ projects[panopoly_core][subdir] = panopoly
 projects[panopoly_core][download][type] = git
 projects[panopoly_core][download][revision] = 16012c7
 projects[panopoly_core][download][branch] = 7.x-1.x
+projects[panopoly_core][patch][2833801] = https://www.drupal.org/files/issues/panopoly_core-jquery-update-2833801-2.patch
 
 projects[panopoly_images][version] = 1.x-dev
 projects[panopoly_images][subdir] = panopoly
@@ -38,6 +39,7 @@ projects[panopoly_admin][subdir] = panopoly
 projects[panopoly_admin][download][type] = git
 projects[panopoly_admin][download][revision] = 7ccc614
 projects[panopoly_admin][download][branch] = 7.x-1.x
+projects[panopoly_admin][patch][2833801] = https://www.drupal.org/files/issues/panopoly_admin-jquery-update-2833801-2.patch
 
 projects[panopoly_users][version] = 1.x-dev
 projects[panopoly_users][subdir] = panopoly
