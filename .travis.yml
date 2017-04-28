@@ -129,6 +129,7 @@ script:
 
 after_script:
   - drupal-ti after_script
+  - travis_debug
 
 # For now, don't test 8.x-2.x.
 branches:
