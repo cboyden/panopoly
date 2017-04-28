@@ -108,6 +108,11 @@ cache:
     - $HOME/.composer/cache
     - $HOME/.drush/cache
 
+addons:
+  apt:
+    packages:
+      - oracle-java8-set-default
+
 mysql:
   database: drupal_travis_db
   username: root
