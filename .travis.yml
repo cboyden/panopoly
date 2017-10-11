@@ -79,8 +79,8 @@ env:
     # We use both chrome and firefox, but this makes chromedriver available.
     - DRUPAL_TI_BEHAT_BROWSER="chrome"
     # Pin to Chrome 56.
-    - DRUPAL_TI_BEHAT_CHROME_URL="http://www.slimjetbrowser.com/chrome/lnx/chrome64_56.0.2924.87.deb"
-    - DRUPAL_TI_BEHAT_CHROMEDRIVER_VERSION="2.27"
+    # - DRUPAL_TI_BEHAT_CHROME_URL="http://www.slimjetbrowser.com/chrome/lnx/chrome64_56.0.2924.87.deb"
+    - DRUPAL_TI_BEHAT_CHROMEDRIVER_VERSION="2.33"
 
     # PHPUnit specific commandline arguments.
     - DRUPAL_TI_PHPUNIT_ARGS=""
