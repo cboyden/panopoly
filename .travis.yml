@@ -117,6 +117,10 @@ env:
     #- UPGRADE=7.x-1.39
     #- UPGRADE=7.x-1.38
 
+
+addons:
+  chrome: stable
+
 # Cache Composer & Drush directories.
 cache:
   directories:
