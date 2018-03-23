@@ -32,6 +32,8 @@ projects[panopoly_widgets][subdir] = panopoly
 projects[panopoly_widgets][download][type] = git
 projects[panopoly_widgets][download][revision] = ac5bd07
 projects[panopoly_widgets][download][branch] = 7.x-1.x
+projects[panopoly_widgets][patch][2952671] = https://www.drupal.org/files/issues/2018-03-13/panopoly_widgets-missing-required-file-fields-2952671-2.patch
+projects[panopoly_widgets][patch][2505357] = https://www.drupal.org/files/issues/2018-03-21/panopoly_widgets-required-2505357-8.patch
 
 projects[panopoly_admin][version] = 1.x-dev
 projects[panopoly_admin][subdir] = panopoly
@@ -72,3 +74,4 @@ projects[panopoly_test][subdir] = panopoly
 projects[panopoly_test][download][type] = git
 projects[panopoly_test][download][revision] = 08e3246
 projects[panopoly_test][download][branch] = 7.x-1.x
+projects[panopoly_test][patch][2505357] = https://www.drupal.org/files/issues/2018-03-23/panopoly_test-required-fields-2505357-9.patch
