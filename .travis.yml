@@ -23,6 +23,10 @@ matrix:
       env: UPGRADE=none INSTALL_PANOPOLY_DEMO_FROM_APPS=1
     - php: "7.1"
       env: UPGRADE=none INSTALL_PANOPOLY_DEMO_FROM_APPS=1
+    - php: "7.3"
+      env: UPGRADE=none INSTALL_PANOPOLY_DEMO_FROM_APPS=1
+    - php: "7.4"
+      env: UPGRADE=none INSTALL_PANOPOLY_DEMO_FROM_APPS=1
     - php: "5.6"
       env: UPGRADE=none INSTALL_PANOPOLY_DEMO_FROM_APPS=1
 
@@ -103,12 +107,12 @@ env:
   matrix:
     - UPGRADE=none     INSTALL_PANOPOLY_DEMO_FROM_APPS=1
     - UPGRADE=7.x-1.75
-    - UPGRADE=7.x-1.74
-    - UPGRADE=7.x-1.72
-    - UPGRADE=7.x-1.71
-    - UPGRADE=7.x-1.70
-    - UPGRADE=7.x-1.69
-    - UPGRADE=7.x-1.68
+    #- UPGRADE=7.x-1.74
+    #- UPGRADE=7.x-1.72
+    #- UPGRADE=7.x-1.71
+    #- UPGRADE=7.x-1.70
+    #- UPGRADE=7.x-1.69
+    #- UPGRADE=7.x-1.68
 
 # Cache Composer & Drush directories.
 cache:
