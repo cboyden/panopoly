@@ -29,7 +29,6 @@ Feature: Crop image
       And I should not see the "Crop (cropped)" button in the "Media upload tab" region
     When I press "Crop"
     Then I should see "Maximize selection" in the "Manual Crop" region
-      And I should not see "Remove selection" in the "Manual Crop" region
     When I click "Maximize selection" in the "Manual Crop" region
       And I click "Save" in the "Manual Crop" region
     Then I should see the "Crop (cropped)" button in the "Media upload tab" region
