@@ -112,15 +112,15 @@ env:
   matrix:
     - UPGRADE=none     INSTALL_PANOPOLY_DEMO_FROM_APPS=1
     - UPGRADE=7.x-1.78
-    - UPGRADE=7.x-1.77
-    - UPGRADE=7.x-1.76
-    - UPGRADE=7.x-1.75
-    - UPGRADE=7.x-1.74
-    - UPGRADE=7.x-1.72
-    - UPGRADE=7.x-1.71
-    - UPGRADE=7.x-1.70
-    - UPGRADE=7.x-1.69
-    - UPGRADE=7.x-1.68
+#    - UPGRADE=7.x-1.77
+#    - UPGRADE=7.x-1.76
+#    - UPGRADE=7.x-1.75
+#    - UPGRADE=7.x-1.74
+#    - UPGRADE=7.x-1.72
+#    - UPGRADE=7.x-1.71
+#    - UPGRADE=7.x-1.70
+#    - UPGRADE=7.x-1.69
+#    - UPGRADE=7.x-1.68
 
 # Cache Composer & Drush directories.
 cache:
