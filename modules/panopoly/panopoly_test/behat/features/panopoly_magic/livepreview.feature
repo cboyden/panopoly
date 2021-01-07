@@ -6,7 +6,6 @@ Feature: Live preview
   @api @javascript @panopoly_magic @panopoly_widgets
   Scenario: Automatic live preview should show changes immediately
     Given I am logged in as a user with the "administrator" role
-      And Panopoly magic live previews are automatic
       And I am viewing a landing page
     When I customize this page with the Panels IPE
       And I click "Add new pane"
@@ -47,7 +46,6 @@ Feature: Live preview
       | Test Page 3 | Test body | 01/01/2001 11:00am |      1 |
       | Test Page 1 | Test body | 01/02/2001 11:00am |      1 |
       | Test Page 2 | Test body | 01/03/2001 11:00am |      1 |
-      And Panopoly magic live previews are automatic
       And I am viewing a landing page
     When I customize this page with the Panels IPE
       And I click "Add new pane"
@@ -122,12 +120,12 @@ Feature: Live preview
       | Test Page 3 | Test body | 01/01/2001 11:00am |      1 |
       | Test Page 1 | Test body | 01/02/2001 11:00am |      1 |
       | Test Page 2 | Test body | 01/03/2001 11:00am |      1 |
-      And Panopoly magic live previews are automatic
       And I am viewing a landing page
     When I customize this page with the Panels IPE
       And I click "Add new pane"
       And I click "Panopoly Test" in the "CTools modal" region
       And I click "View: Magic Views Cache: Cached Content" in the "CTools modal" region
+      And I click "Add View: Magic Views Cache: Cached Content" in the "Live preview" region
       And I fill in "widget_title" with "Test Cached Content"
       And I wait for live preview to finish
     Then I should see "Test Cached Content" in the "Live preview" region
@@ -164,7 +162,6 @@ Feature: Live preview
   @api @javascript @panopoly_magic @panopoly_widgets
   Scenario: Automatic live preview should validation errors immediately
     Given I am logged in as a user with the "administrator" role
-      And Panopoly magic live previews are automatic
       And I am viewing a landing page
     When I customize this page with the Panels IPE
       And I click "Add new pane"
@@ -179,7 +176,6 @@ Feature: Live preview
   @api @javascript @panopoly_magic @panopoly_widgets @panopoly_wysiwyg
   Scenario: Automatic live preview should update when making changes in the WYSIWYG
     Given I am logged in as a user with the "administrator" role
-      And Panopoly magic live previews are automatic
       And I am viewing a landing page
     When I customize this page with the Panels IPE
       And I click "Add new pane"
@@ -391,7 +387,6 @@ Feature: Live preview
   @api @javascript @panopoly_magic
   Scenario: There should be NO live preview when configuring region style
     Given I am logged in as a user with the "administrator" role
-      And Panopoly magic live previews are automatic
       And I am viewing a "panopoly_test_page" with the title "Testing region style"
     When I customize this page with the Panels IPE
       And I click "Region style" in the "Bryant Content" region
@@ -405,7 +400,6 @@ Feature: Live preview
   @api @javascript @panopoly_magic
   Scenario: Live preview should work when configuring a pane style
     Given I am logged in as a user with the "administrator" role
-      And Panopoly magic live previews are automatic
     # We need to use the 'body_only' panel so that the first pane has some
     # content. Otherwise, it won't render the style plugin!
     When I visit "/node/add/panopoly-test-page"
@@ -471,7 +465,6 @@ Feature: Live preview
   @api @javascript @panopoly_widgets
     Scenario: Make text widget title a link
       Given I am logged in as a user with the "administrator" role
-        And Panopoly magic live previews are automatic
         And I am viewing a landing page
       When I customize this page with the Panels IPE
         And I click "Add new pane"

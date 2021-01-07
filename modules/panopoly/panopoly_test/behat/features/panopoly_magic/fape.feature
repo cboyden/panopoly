@@ -5,7 +5,6 @@ Feature: Edit field content in the IPE via FAPE
 
   Background:
   Given I am logged in as a user with the "administrator" role
-    And Panopoly magic live previews are automatic
     And I visit "/node/add/panopoly-test-page"
 
   @api @javascript @panopoly_magic
