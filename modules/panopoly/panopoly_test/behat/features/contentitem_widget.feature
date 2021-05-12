@@ -98,6 +98,7 @@ Feature: Add content item
     When I select "Test Page" from "exposed[type]"
       And I fill in the following:
       | exposed[title] | Very long title nunc nec posuere eros praesent malesuada ante vel nibh imperdiet volutpat aliquam tincidunt elementum sem in aliquet tellus semper ac proin |
+      And I select the radio button "Content"
       And I select the radio button "Teaser"
       And I press "Add" in the "CTools modal" region
       And I press "Save"
