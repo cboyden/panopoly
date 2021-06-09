@@ -302,7 +302,7 @@ projects[tablefield][patch][3137640] = https://www.drupal.org/files/issues/2020-
 
 projects[simple_gmap][version] = 1.5
 projects[simple_gmap][subdir] = contrib
-projects[simple_gmap][patch][2902178] = https://www.drupal.org/files/issues/simple_gmap-iframe-title-2902178-15.patch
+projects[simple_gmap][patch][2902178] = https://www.drupal.org/files/issues/2021-06-09/simple_gmap-iframe-title-2902178-19.patch
 
 ; Panopoly - Contrib - Widgets
 
