@@ -101,12 +101,12 @@ class TestSubContext extends RawDrupalContext implements DrupalSubContextInterfa
   public function saveConfig() {
     $this->configVariables['panopoly_magic_live_preview'] = variable_get('panopoly_magic_live_preview', 'not set');
     $this->configVariables['panopoly_magic_pane_add_preview'] = variable_get('panopoly_magic_pane_add_preview', 'not set');
-    variable_set('panopoly_magic_live_preview', 1);
+    variable_set('panopoly_magic_live_preview', 0);
     variable_set('panopoly_magic_pane_add_preview', PANOPOLY_ADD_PREVIEW_SINGLE); // 3.
   }
 
   /**
-   * Restore saved preview configurations or other .
+   * Restore saved preview configurations or other variables.
    *
    * @AfterScenario @api
    */

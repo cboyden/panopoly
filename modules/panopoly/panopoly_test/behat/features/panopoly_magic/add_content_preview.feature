@@ -39,7 +39,6 @@ Feature: Preview of widgets on 'Add content' dialog
   @api @javascript @panopoly_magic
   Scenario: Manual previews on the 'Add content' dialog
     Given I am logged in as a user with the "administrator" role
-      And Panopoly magic live previews are disabled
       And Panopoly magic add content previews are manual
       And I am viewing a landing page
     When I customize this page with the Panels IPE
@@ -58,7 +57,6 @@ Feature: Preview of widgets on 'Add content' dialog
   @api @javascript @panopoly_magic
   Scenario: Previews on the 'Add content' dialog can be disabled
     Given I am logged in as a user with the "administrator" role
-      And Panopoly magic live previews are disabled
       And Panopoly magic add content previews are disabled
       And I am viewing a landing page
     When I customize this page with the Panels IPE
