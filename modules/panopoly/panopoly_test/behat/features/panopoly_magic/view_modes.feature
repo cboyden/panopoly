@@ -5,6 +5,7 @@ Feature: Panopoly Magic respects entity view configuration
 
   Background:
     Given I am logged in as a user with the "administrator" role
+      And Panopoly magic add content previews are disabled
       And I am viewing a landing page
     When I customize this page with the Panels IPE
       And I click "Add new pane"
@@ -13,23 +14,20 @@ Feature: Panopoly Magic respects entity view configuration
   @api @javascript @panopoly_magic
   Scenario: Add view pane that has an entity view mode of Featured
     When I click "View: Magic View Modes: Entity Featured" in the "CTools modal" region
-      And I click "Add View: Magic View Modes: Entity Featured" in the "Live preview" region
-    Then I should see "Content Settings"
-      And I should not see "Display Settings"
+    Then I should not see "Display Settings"
+      And I should see "Content Settings"
       And the "Featured" radio button should be set to "Featured "
 
   @api @javascript @panopoly_magic
   Scenario: Add view pane that has default view mode
     When I click "View: Magic View Modes: Entity Full" in the "CTools modal" region
-      And I click "Add View: Magic View Modes: Entity Full" in the "Live preview" region
-    Then I should see "Content Settings"
-      And I should not see "Display Settings"
+    Then I should not see "Display Settings"
+      And I should see "Content Settings"
       And the "Full content " radio button should be set to "Full content "
 
   @api @javascript @panopoly_magic
   Scenario: Add view pane that supports fields
     When I click "View: Magic View Modes: Fields" in the "CTools modal" region
-      And I click "Add View: Magic View Modes: Fields" in the "Live preview" region
     Then I should see "Display Settings"
       And I should not see "Content Settings"
     When I select the radio button "Content"
@@ -39,7 +37,6 @@ Feature: Panopoly Magic respects entity view configuration
   @api @javascript @panopoly_magic
   Scenario: Add view pane that doesn't allow view mode changes
     When I click "View: Magic View Modes: No Override" in the "CTools modal" region
-      And I click "Add View: Magic View Modes: No Override" in the "Live preview" region
     Then I should not see "Display Settings"
       And I should not see "Content Settings"
       And I should not see "Featured "
@@ -48,15 +45,13 @@ Feature: Panopoly Magic respects entity view configuration
   @api @javascript @panopoly_magic
   Scenario: Add an overridden Views widget set to Content and change view mode
     When I click "View: Magic Display Content: Pane overridden" in the "CTools modal" region
-      And I click "Add View: Magic Display Content: Pane overridden" in the "Live preview" region
-    Then I should see "Content Settings"
-      And I should not see "Display Settings"
-      And the "Full content" radio button should be set to "Full content "
+    Then I should not see "Display Settings"
+      And I should see "Content Settings"
+      And the "Featured" radio button should be set to "Featured "
 
   @api @javascript @panopoly_magic
   Scenario: Add a default Views widget set to Content and change view mode
     When I click "View: Magic Display Content: Pane default" in the "CTools modal" region
-      And I click "Add View: Magic Display Content: Pane default" in the "Live preview" region
-    Then I should see "Content Settings"
-      And I should not see "Display Settings"
+    Then I should not see "Display Settings"
+      And I should see "Content Settings"
       And the "Teaser " radio button should be set to "Teaser "
